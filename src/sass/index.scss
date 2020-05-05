@@ -1,27 +1,38 @@
+// npm i node-sass
+
 html,
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
   font-size: 1.6rem;
-  background: #6190e8;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #a7bfe8, #6190e8);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #a7bfe8, #6190e8);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #6190e8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a7bfe8,
+    #6190e8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .check {
   text-decoration: line-through;
   font-style: italic;
-  color: #3c5e9e; }
+  color: #3c5e9e;
+}
 
 .Home {
   display: flex;
@@ -31,8 +42,8 @@ body {
   border-bottom: 0;
   width: 400px;
   background: #a7bfe880;
-  margin-bottom: 100px; }
-  .Home .header {
+  margin-bottom: 100px;
+  .header {
     font-size: 3.5rem;
     height: 60px;
     color: white;
@@ -40,38 +51,47 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: "Righteous", cursive; }
-    .Home .header i {
-      margin-right: 10px; }
-  .Home .todos {
-    font-family: "Pathway Gothic One", sans-serif; }
-    .Home .todos .todo {
+    font-family: "Righteous", cursive;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+  .todos {
+    font-family: "Pathway Gothic One", sans-serif;
+    .todo {
       border-bottom: 1px solid white;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0px 20px;
       font-size: 2.3rem;
-      color: #2a2366; }
-      .Home .todos .todo p {
-        cursor: pointer; }
-      .Home .todos .todo:nth-child(odd) {
-        background-color: #a7bfe8; }
-      .Home .todos .todo i {
+      color: rgb(42, 35, 102);
+      p {
+        cursor: pointer;
+      }
+      &:nth-child(odd) {
+        background-color: #a7bfe8;
+      }
+      i {
         color: white;
-        cursor: pointer; }
-  .Home .addTodo {
+        cursor: pointer;
+      }
+    }
+  }
+  .addTodo {
     padding-bottom: 15px;
-    border-bottom: 1px solid white; }
-    .Home .addTodo input {
+    border-bottom: 1px solid white;
+    input {
       width: 330px;
       margin-left: 10px;
       height: 30px;
       border-radius: 10px;
       border: 1px solid white;
       outline: none;
-      padding-left: 10px; }
-    .Home .addTodo button {
+      padding-left: 10px;
+    }
+    button {
       cursor: pointer;
       color: white;
       font-size: 2rem;
@@ -81,12 +101,16 @@ body {
       background-color: #2d1a55;
       border: none;
       border-radius: 50%;
-      outline: none; }
-    .Home .addTodo .error {
+      outline: none;
+    }
+    .error {
       text-align: center;
       font-family: "Pathway Gothic One", sans-serif;
-      color: #a04277;
+      color: rgb(160, 66, 119);
       font-size: 1.7rem;
       letter-spacing: 2px;
       margin: 0;
-      margin-top: 5px; }
+      margin-top: 5px;
+    }
+  }
+}
